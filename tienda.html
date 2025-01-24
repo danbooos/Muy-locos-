@@ -7,30 +7,31 @@
     <title>Tienda - Sorteos Muy Locos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        body {background-color: #ffffff; color: #333;}
-        header {background: linear-gradient(90deg, #007bff, #00c3ff); padding: 30px; text-align: center; color: white;}
-        header h1 {font-size: 2.5rem; font-weight: bold;}
-        nav a {color: white; margin: 0 10px; font-weight: bold;}
-        nav a:hover {text-decoration: underline;}
-        .hero {text-align: center; padding: 50px 20px; background-color: #f8f9fa;}
-        .hero img {max-width: 100%; border-radius: 10px;}
-        .container {margin-top: 20px;}
-        footer {background-color: #333; color: white; padding: 20px; text-align: center; margin-top: 30px;}
+        body {background-color: #ffffff; color: #333; display: flex; min-height: 100vh; margin: 0;}
+        .sidebar {background: #007bff; color: white; width: 250px; padding: 20px; display: flex; flex-direction: column;}
+        .sidebar a {color: white; text-decoration: none; margin-bottom: 10px; font-weight: bold;}
+        .sidebar a:hover {text-decoration: underline;}
+        .content {flex: 1; padding: 20px;}
+        header {background: linear-gradient(90deg, #007bff, #00c3ff); padding: 20px; color: white;}
+        footer {background-color: #333; color: white; padding: 10px; text-align: center; margin-top: 20px;}
+        .hero {text-align: center; padding: 20px; background: #f8f9fa; border-radius: 8px;}
+        .hero img {max-width: 100%; border-radius: 8px;}
     </style>
 </head>
 <body>
-    <header>
-        <h1>Sorteos Muy Locos</h1>
-        <nav class="d-flex justify-content-center">
-            <a href="index.html" class="text-white">Inicio</a>
-            <a href="tienda.html" class="text-white">Tienda</a>
-            <a href="sorteos.html" class="text-white">Sorteos</a>
-            <a href="registro.html" class="text-white">Registro</a>
-            <a href="politica.html" class="text-white">Política</a>
-            <a href="contacto.html" class="text-white">Contacto</a>
-        </nav>
-    </header>
-    <div class="container">
+    <div class="sidebar">
+        <h2>Sorteos Muy Locos</h2>
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="sorteos.html">Sorteos</a>
+        <a href="registro.html">Registro</a>
+        <a href="politica.html">Política</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Tienda</h1>
+        </header>
         
         <h2>Productos en Venta</h2>
         <div class="row">
@@ -63,9 +64,9 @@
             </div>
         </div>
     
+        <footer>
+            <p>&copy; 2025 Sorteos Muy Locos - Todos los derechos reservados.</p>
+        </footer>
     </div>
-    <footer>
-        <p>&copy; 2025 Sorteos Muy Locos - Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
